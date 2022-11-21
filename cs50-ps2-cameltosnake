@@ -1,0 +1,13 @@
+def case(n):
+    r = [n[0].lower()]
+    for i in n[1:]:
+        if i in ('ABCDEFGHIJKLMNOPQRSTUVWXYZ'):
+            r.append('_')
+            r.append(i.lower())
+        else:
+            r.append(i)
+    return ''.join(r)
+    
+print(case('AniketRoy'))
+        
+    
